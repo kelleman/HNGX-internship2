@@ -1,5 +1,5 @@
 // controllers/personController.js
-const Person = require('../models/person');
+const Person = require('../models/personModel');
 
 // Create a new person
 exports.createPerson = async (req, res) => {

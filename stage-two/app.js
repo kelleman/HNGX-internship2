@@ -3,9 +3,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
+require('dotenv').config();
 
-const db = require('./db');
-const personRoutes = require('./routes/personRoutes');
+const db = require('./db/connectDb');
+const personRoutes = require('./routes/personRoute');
 
 app.use(bodyParser.json());
 
