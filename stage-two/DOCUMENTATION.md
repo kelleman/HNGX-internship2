@@ -161,10 +161,10 @@ Delete a Person by ID
 LIMITATIONS AND ASSUMPTIONS
 This API assumes that a person's name and age are the only required fields when creating or updating a person. Other fields or validations may be added as needed.
 Error responses include a JSON message to describe the error.
-Setup Instructions
+
+
+SETUP INSTRUCTIONS
 Clone the repository:
-
-
 git clone <your-repo-url>
 cd person-api
 Install dependencies:
