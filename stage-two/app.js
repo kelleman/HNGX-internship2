@@ -10,7 +10,7 @@ const personRoutes = require('./routes/personRoute');
 
 app.use(bodyParser.json());
 
-app.use(personRoutes);
+app.use('/api', personRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
