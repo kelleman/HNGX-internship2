@@ -54,9 +54,11 @@ exports.deletePersonById = async (req, res) => {
     if (!person) {
       return res.status(404).json({ error: 'Person not found' });
     }
-    // Send a success message
-    res.status(204).json({ message: 'Person deleted successfully' });
+    // Send a success message in headers
+    res.setHeader('X-Response-Message', 'Person deleted successfully');
+    res.status(204).send();
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
 };
+
