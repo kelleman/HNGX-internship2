@@ -1,23 +1,12 @@
 PERSON API DOCUMENTATION
+
 This document provides detailed information on how to use the Person API. The API allows you to perform CRUD operations on a "person" resource.
 
-ENDPOINTS
-Create a New Person
-Read a Person by ID
-Update a Person by ID
-Delete a Person by ID
+API ENDPOINTS URL: https://documenter.getpostman.com/view/21753101/2s9YC5zYEa#bad8632c-b2b4-4858-bf3a-cecbccf3aaa0
 
-Request and Response Formats
-Create a New Person
-Read a Person by ID
-Update a Person by ID
-Delete a Person by ID
-Sample Usage
-Limitations and Assumptions
-Setup Instructions
+1. ENDPOINTS
 
-ENDPOINTS
-1. Create a New Person
+    Create a New Person
            - Endpoint: /api
            - HTTP Method: POST
            - Description: Create a new person resource.
@@ -38,7 +27,7 @@ ENDPOINTS
                     }
 
 
-2. Read a Person by ID
+     Read a Person by ID
             - Endpoint: /api/{person_id}
             - HTTP Method: GET
             - Description: Retrieve details of a person by their ID.
@@ -58,7 +47,7 @@ ENDPOINTS
                     }
 
 
-3. Update a Person by ID
+     Update a Person by ID
            - Endpoint: /api/{person_id}
            - HTTP Method: PUT
            - Description: Modify details of an existing person by their ID.
@@ -84,7 +73,7 @@ ENDPOINTS
                 }
 
 
-4. Delete a Person by ID
+     Delete a Person by ID
             - Endpoint: /api/{person_id}
 
             - HTTP Method: DELETE
@@ -100,9 +89,9 @@ ENDPOINTS
                         {
                         "error": "Person not found"
                         }
-#Sample Usage
+1 SAMPLE USAGE
 
-Create a New Person
+    Create a New Person
         - Request:
             http
             POST /api
@@ -119,7 +108,7 @@ Create a New Person
             }
 
 
-Read a Person by ID
+    Read a Person by ID
         - Request:
 
             http
@@ -132,7 +121,7 @@ Read a Person by ID
             "_id": "5fcb56789012345678901234"
             }
 
-Update a Person by ID
+    Update a Person by ID
         - Request:
             http
             Copy code
@@ -151,7 +140,7 @@ Update a Person by ID
             "age": 30,
             "_id": "5fcb56789012345678901234"
             }
-Delete a Person by ID
+    Delete a Person by ID
         - Request:
             http
             Copy code
@@ -159,12 +148,14 @@ Delete a Person by ID
         - Response (204 No Content): No response body
 
 LIMITATIONS AND ASSUMPTIONS
+
 This API assumes that a person's name and age are the only required fields when creating or updating a person. Other fields or validations may be added as needed.
 Error responses include a JSON message to describe the error.
 
 UML Link: https://drive.google.com/file/d/1PUkqlpnxOrSaJ_0eR4ccXBevQksNjV7_/view?usp=sharing
 
 SETUP INSTRUCTIONS
+
 Clone the repository:
 git clone <your-repo-url>
 cd person-api
