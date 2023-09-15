@@ -7,11 +7,14 @@ exports.createPerson = async (req, res) => {
     const { name, age } = req.body;
     const person = new Person({ name, age });
     await person.save();
-    res.status(201).json(person);
+    
+    // Send a success message
+    res.status(201).json({ message: 'Person created successfully', createdPerson: person });
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
 };
+
 
 // Read a person by ID
 exports.getPersonById = async (req, res) => {
@@ -35,11 +38,14 @@ exports.updatePersonById = async (req, res) => {
     if (!person) {
       return res.status(404).json({ error: 'Person not found' });
     }
-    res.json(person);
+    
+    // Send a success message
+    res.json({ message: 'Person updated successfully', updatedPerson: person });
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
 };
+
 
 // Delete a person by ID
 exports.deletePersonById = async (req, res) => {
@@ -48,7 +54,8 @@ exports.deletePersonById = async (req, res) => {
     if (!person) {
       return res.status(404).json({ error: 'Person not found' });
     }
-    res.status(204).send();
+    // Send a success message
+    res.status(204).json({ message: 'Person deleted successfully' });
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
