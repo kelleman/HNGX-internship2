@@ -14,5 +14,5 @@ npm install
 
 Your API should now be running locally at http://localhost:3000. You can use the provided endpoint URIs to test the API using tools like Postman or curl.
 
-
+Documentation Link: https://documenter.getpostman.com/view/21753101/2s9YC5zYEa#bad8632c-b2b4-4858-bf3a-cecbccf3aaa0
 
