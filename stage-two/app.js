@@ -2,8 +2,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const port = process.env.PORT|| 4040;
 require('dotenv').config();
+
+const port = process.env.PORT|| 4040;
 
 const db = require('./db/connectDb');
 const personRoutes = require('./routes/personRoute');

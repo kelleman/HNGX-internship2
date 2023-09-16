@@ -1,8 +1,13 @@
 PERSON API DOCUMENTATION
 
+HOSTED URL: https://hngx-two-rtnt.onrender.com
+
+
 This document provides detailed information on how to use the Person API. The API allows you to perform CRUD operations on a "person" resource.
 
-API ENDPOINTS URL: https://documenter.getpostman.com/view/21753101/2s9YC5zYEa#bad8632c-b2b4-4858-bf3a-cecbccf3aaa0
+#This endpoints are documentations from Postman
+
+API ENDPOINTS URL DOCUMENTATION: https://documenter.getpostman.com/view/21753101/2s9YC5zYEa#bad8632c-b2b4-4858-bf3a-cecbccf3aaa0
 
 1. ENDPOINTS
 
@@ -93,7 +98,6 @@ API ENDPOINTS URL: https://documenter.getpostman.com/view/21753101/2s9YC5zYEa#ba
 
     Create a New Person
         - Request:
-            http
             POST /api
             Content-Type: application/json
                 {
@@ -110,9 +114,6 @@ API ENDPOINTS URL: https://documenter.getpostman.com/view/21753101/2s9YC5zYEa#ba
 
     Read a Person by ID
         - Request:
-
-            http
-            Copy code
             GET /api/5fcb56789012345678901234
         - Response (200 OK):
             {
@@ -123,8 +124,6 @@ API ENDPOINTS URL: https://documenter.getpostman.com/view/21753101/2s9YC5zYEa#ba
 
     Update a Person by ID
         - Request:
-            http
-            Copy code
             PUT /api/5fcb56789012345678901234
             Content-Type: application/json
 
@@ -140,10 +139,9 @@ API ENDPOINTS URL: https://documenter.getpostman.com/view/21753101/2s9YC5zYEa#ba
             "age": 30,
             "_id": "5fcb56789012345678901234"
             }
+
     Delete a Person by ID
         - Request:
-            http
-            Copy code
             DELETE /api/5fcb56789012345678901234
         - Response (204 No Content): No response body
 
